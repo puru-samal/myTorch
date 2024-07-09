@@ -1,6 +1,6 @@
 import sys
 sys.path.append('./')
-import mytorch.nn.dropout
+from mytorch.nn.dropout import Dropout1d
 from mytorch.models.mlp import MLP4
 from mytorch.optim.adam import Adam
 from mytorch.optim.adamW import AdamW
@@ -313,7 +313,7 @@ try:
 
     reset_prng()
 
-    dropout_layer = mytorch.nn.dropout.Dropout(p=0.3)
+    dropout_layer = Dropout1d(p=0.3)
     y = dropout_layer(x)
 
     with open(f"{base_dir}/dropout_sol_forward.pkl", "rb") as stream:
@@ -348,7 +348,7 @@ try:
 
     reset_prng()
 
-    dropout_layer = mytorch.nn.dropout.Dropout(p=0.3)
+    dropout_layer = Dropout1d(p=0.3)
     y = dropout_layer(x)
 
     reset_prng()

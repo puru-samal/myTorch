@@ -1,6 +1,6 @@
 from .activation import Identity, Sigmoid, Tanh, ReLU, GELU, Softmax
-from .batchnorm import BatchNorm1d
-from .dropout import Dropout
+from .batchnorm import BatchNorm1d, BatchNorm2d
+from .dropout import Dropout1d, Dropout2d
 from .linear import Linear
 from .resampling import Upsample1d, Upsample2d, Downsample1d, Downsample2d
 from .flatten import Flatten

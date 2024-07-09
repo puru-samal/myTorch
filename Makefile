@@ -6,3 +6,6 @@ test1b:
 
 test2:
 	python tests/test2/test2.py
+
+test2b:
+	python tests/test2b/test2b.py
